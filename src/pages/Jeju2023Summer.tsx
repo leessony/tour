@@ -35,6 +35,12 @@ function Jeju2023Summer() {
                             dataIndex: "day of  the week",
                             title: "요일",
                             align: "center"
+                        },
+                        {
+                            key: "accommodations",
+                            dataIndex: "accommodations",
+                            title: "숙소",
+                            align: "center"
                         }
                     ]}
                     dataSource={parsedPlans}
