@@ -1,6 +1,31 @@
-#main {
-  background: url("../sources/image/Jeju.jpg") center bottom / cover no-repeat;
-  opacity: 0.5; /* 투명도 조정 */
-  height: 3000px; // 임시
-  //height: 100vh; /* 뷰포트 높이에 맞춤 */
+#content {
+  #header {
+    height: 40vh;
+    width: 100%;
+    position: relative;
+    background: url("../sources/image/Jeju_transparent.jpg") center bottom / cover no-repeat;
+    transition: all 1s ease;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+  }
+
+  #header.small {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 10vh;
+    background-position: left top;
+    background-color: white;
+    justify-content: left;
+    color: #ffffff; /* 글자 색상 설정 */
+    font-size: 18px;
+  }
+
+  #main {
+    height: 3000px; // 임시
+    //height: 100vh; /* 뷰포트 높이에 맞춤 */
+  }
 }
