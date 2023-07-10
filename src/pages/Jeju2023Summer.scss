@@ -1,6 +1,6 @@
 #content {
   #header {
-    height: 40vh;
+    height: 30vh;
     width: 100%;
     position: relative;
     background: url("../sources/image/Jeju_transparent.jpg") center bottom / cover no-repeat;
@@ -25,7 +25,6 @@
   }
 
   #main {
-    height: 3000px; // 임시
-    //height: 100vh; /* 뷰포트 높이에 맞춤 */
+    height: 120vh; /* 뷰포트 높이에 맞춤 */
   }
 }
