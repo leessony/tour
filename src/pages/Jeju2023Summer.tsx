@@ -1,8 +1,10 @@
 import React from 'react';
-import {Table} from "antd";
+import {Table, Typography} from "antd";
 import plans from '../datasources/jeju.json';
 
 import "./Jeju2023Summer.scss"
+
+const {Link} = Typography;
 
 function Jeju2023Summer() {
     const parsedPlans = plans.map((item: any, idx: number) => {
@@ -40,7 +42,10 @@ function Jeju2023Summer() {
                             key: "accommodations",
                             dataIndex: "accommodations",
                             title: "숙소",
-                            align: "center"
+                            align: "center",
+                            render: (val: string, item: any) => {
+                                return val !== "-" ? <Link href={item.location}>{val}</Link> : <span>{val}</span>
+                            }
                         }
                     ]}
                     dataSource={parsedPlans}

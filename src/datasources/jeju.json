@@ -3,48 +3,56 @@
     "day": "1일차",
     "date": "2023-07-15",
     "day of  the week": "토요일",
-    "accommodations": "켄싱턴리조트 중문"
+    "accommodations": "켄싱턴리조트 중문",
+    "location": "https://naver.me/5kLnkZKE"
   },
   {
     "day": "2일차",
     "date": "2023-07-16",
     "day of  the week": "일요일",
-    "accommodations": "신라호텔 제주"
+    "accommodations": "신라호텔 제주",
+    "location": "https://naver.me/xqf5KIzG"
   },
   {
     "day": "3일차",
     "date": "2023-07-17",
     "day of  the week": "월요일",
-    "accommodations": "오션스위츠 제주"
+    "accommodations": "오션스위츠 제주",
+    "location": "https://naver.me/FmgVh3sf"
   },
   {
     "day": "4일차",
     "date": "2023-07-18",
     "day of  the week": "화요일",
-    "accommodations": "세인트 비치 호텔"
+    "accommodations": "세인트 비치 호텔",
+    "location": "https://naver.me/FzHiRUd0"
   },
   {
     "day": "5일차",
     "date": "2023-07-19",
     "day of  the week": "수요일",
-    "accommodations": "세인트 비치 호텔"
+    "accommodations": "세인트 비치 호텔",
+    "location": "https://naver.me/FzHiRUd0"
   },
   {
     "day": "6일차",
     "date": "2023-07-20",
     "day of  the week": "목요일",
-    "accommodations": "유니호텔 제주"
+    "accommodations": "유니호텔 제주",
+    "location": "https://naver.me/GSitGaJy"
   },
   {
     "day": "7일차",
     "date": "2023-07-21",
     "day of  the week": "금요일",
-    "accommodations": "호텔 시리우스"
+    "accommodations": "호텔 시리우스",
+    "location": "https://naver.me/ForHTuG1"
   },
   {
     "day": "8일차",
     "date": "2023-07-22",
     "day of  the week": "토요일",
-    "accommodations": "-"
+    "accommodations": "-",
+    "location": "-"
   }
 ]
