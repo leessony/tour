@@ -1,15 +1,17 @@
 {
   "files": {
-    "main.css": "/tour/static/css/main.9f07e8cb.css",
-    "main.js": "/tour/static/js/main.86bb5c18.js",
+    "main.css": "/tour/static/css/main.948fe319.css",
+    "main.js": "/tour/static/js/main.c24795cf.js",
     "static/js/787.314474ed.chunk.js": "/tour/static/js/787.314474ed.chunk.js",
+    "static/media/logo.png": "/tour/static/media/logo.0eb28e2ddba5ac85e71d.png",
+    "static/media/Jeju.jpg": "/tour/static/media/Jeju.3bd8860b0696bc126ca2.jpg",
     "index.html": "/tour/index.html",
-    "main.9f07e8cb.css.map": "/tour/static/css/main.9f07e8cb.css.map",
-    "main.86bb5c18.js.map": "/tour/static/js/main.86bb5c18.js.map",
+    "main.948fe319.css.map": "/tour/static/css/main.948fe319.css.map",
+    "main.c24795cf.js.map": "/tour/static/js/main.c24795cf.js.map",
     "787.314474ed.chunk.js.map": "/tour/static/js/787.314474ed.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9f07e8cb.css",
-    "static/js/main.86bb5c18.js"
+    "static/css/main.948fe319.css",
+    "static/js/main.c24795cf.js"
   ]
 }
