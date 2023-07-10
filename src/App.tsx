@@ -6,7 +6,8 @@ import './App.scss';
 function App() {
     return (
         <div className="App">
-            <header className="App-header">
+            <header id="header" className="App-header">
+                Jeju2023Summer
             </header>
             <section id="content">
                 <Jeju2023Summer/>

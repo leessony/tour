@@ -1,8 +1,32 @@
 .App {
   text-align: center;
 
+  #header {
+    height: 40vh;
+    width: 100%;
+    background-image: url("./sources/image/logo.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 0.3s ease;
+    z-index: 100;
+  }
+
+  #header.small {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 60px;
+    background-position: left top;
+    background-color: white;
+    color: black;
+  }
+
+  #content {
+    height: 100vh; /* 뷰포트 높이에 맞춤 */
+  }
+
   .App-header {
     font-size: calc(10px + 2vmin);
-    color: white;
   }
 }

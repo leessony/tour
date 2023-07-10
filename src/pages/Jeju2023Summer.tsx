@@ -1,7 +1,9 @@
 import React from 'react';
 
+import "./Jeju2023Summer.scss"
+
 function Jeju2023Summer() {
-    return <div>Jeju2023Summer</div>
+    return <section id="main"></section>
 }
 
 export default Jeju2023Summer
