@@ -1,22 +1,27 @@
 import React from 'react';
-import {Table, Typography} from "antd";
-import plans from '../datasources/jeju.json';
+import {useNavigate} from "react-router-dom";
+import {Table, Typography, Layout} from "antd";
+import {CaretLeftOutlined} from '@ant-design/icons';
+import plans from '../../../datasources/jeju.json';
 
-import "./Jeju2023Summer.scss"
+import "./JejuSummer.scss"
 
+const {Header, Content} = Layout
 const {Link} = Typography;
 
-function Jeju2023Summer() {
+function JejuSummer() {
+    const navigate = useNavigate()
     const parsedPlans = plans.map((item: any, idx: number) => {
         return {...item, no: idx + 1}
     })
     return (
-        <section id="main">
-            <header id="header" className="App-header">
-                <h1>제주여행 2023</h1>
-            </header>
-            <section id="content">
+        <Layout id="jeju">
+            <Header id="header">
+                <h1><span onClick={() => navigate("/")}><CaretLeftOutlined/></span> 제주여행 2023</h1>
+            </Header>
+            <Content id="content">
                 <Table
+                    rowKey={'no'}
                     bordered={true}
                     pagination={false}
                     columns={[
@@ -50,9 +55,9 @@ function Jeju2023Summer() {
                     ]}
                     dataSource={parsedPlans}
                 />
-            </section>
-        </section>
+            </Content>
+        </Layout>
     )
 }
 
-export default Jeju2023Summer
+export default JejuSummer

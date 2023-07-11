@@ -23,7 +23,8 @@
     -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Akatab:wght@400;900&family=Black+Han+Sans&family=Gugi&family=Hahmlet:wght@600&family=IBM+Plex+Sans+KR:wght@700&family=Inconsolata:wght@800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Akatab:wght@400;900&family=Black+Han+Sans&family=Gugi&family=Hahmlet:wght@600&family=IBM+Plex+Sans+KR:wght@700&family=Inconsolata:wght@800;900&display=swap"
+          rel="stylesheet">
     <title>여행일정계획</title>
     <style>
         body {
@@ -36,9 +37,9 @@
         window.onscroll = function () {
             let header = document.getElementById("header");
             if (window.pageYOffset > 0) {
-                header.classList.add("small");
+                header?.classList.add("small");
             } else {
-                header.classList.remove("small");
+                header?.classList.remove("small");
             }
         };
     </script>

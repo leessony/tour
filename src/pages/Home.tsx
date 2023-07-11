@@ -1,16 +1,23 @@
 import React, {useState} from 'react';
 import {MenuUnfoldOutlined, MenuFoldOutlined} from '@ant-design/icons';
 import type {MenuProps} from 'antd';
-import {Layout, Button, Menu} from 'antd';
+import {Layout, Button, Menu, Typography} from 'antd';
 
 import "./Home.scss";
 
 const {Header, Sider, Content} = Layout;
+const {Link} = Typography;
 
 const items: MenuProps['items'] = [
     {
         label: '여행목록',
         key: 'list',
+        children: [
+            {
+                label: <Link href={"#/list/2023/jeju"}>{'2023-제주'}</Link>,
+                key: "1"
+            }
+        ]
     }
 ];
 
@@ -30,7 +37,6 @@ function Home() {
                     <Menu
                         id="menu"
                         mode="inline"
-                        defaultSelectedKeys={[currentSelectedMenu]}
                         style={{height: '100%'}}
                         items={items}
                         onClick={onMenuClick}
