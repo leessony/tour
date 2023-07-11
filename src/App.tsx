@@ -1,12 +1,12 @@
 import React from 'react';
-import Jeju2023Summer from "./pages/Jeju2023Summer";
+import Home from "./pages/Home";
 
 import './App.scss';
 
 function App() {
     return (
         <div className="App">
-            <Jeju2023Summer/>
+            <Home/>
         </div>
     );
 }

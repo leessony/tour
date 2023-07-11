@@ -11,11 +11,11 @@ function Jeju2023Summer() {
         return {...item, no: idx + 1}
     })
     return (
-        <div id="content">
+        <section id="main">
             <header id="header" className="App-header">
                 <h1>제주여행 2023</h1>
             </header>
-            <section id="main">
+            <section id="content">
                 <Table
                     bordered={true}
                     pagination={false}
@@ -51,7 +51,7 @@ function Jeju2023Summer() {
                     dataSource={parsedPlans}
                 />
             </section>
-        </div>
+        </section>
     )
 }
 

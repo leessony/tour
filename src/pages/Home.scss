@@ -1,0 +1,35 @@
+#main {
+  background-image: url("../sources/images/Home_transparent.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  z-index: 100;
+
+  .icon {
+    font-size: 32px;
+  }
+
+  #menu {
+    font-family: 'Gugi', cursive;
+  }
+
+  #menuBtn {
+    width: 64px;
+    height: 64px;
+  }
+
+  #content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #content > h1 {
+    font-family: 'Gugi', cursive;
+    font-size: 100px;
+    color: bisque;
+    text-shadow: 6px 3px 3px gray;
+  }
+}
