@@ -1,0 +1,28 @@
+.schedule {
+
+  .header {
+    font-family: 'Gugi', cursive;
+    background-color: white;
+
+    h1 {
+      span:nth-child(odd) {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .content {
+    background-color: white;
+
+    .col {
+      //border: 1px solid rebeccapurple;
+      margin-top: 30px;
+
+      .step {
+        display: flex;
+        justify-items: center;
+        align-items: center;
+      }
+    }
+  }
+}

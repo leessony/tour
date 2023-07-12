@@ -2,7 +2,7 @@ import React from 'react';
 import {useNavigate} from "react-router-dom";
 import {Table, Typography, Layout} from "antd";
 import {CaretLeftOutlined} from '@ant-design/icons';
-import plans from '../../../../datasources/jeju.json';
+import plans from '../../../../datasources/2023-jeju/master-plan.json';
 
 import "./MasterPlan.scss"
 
