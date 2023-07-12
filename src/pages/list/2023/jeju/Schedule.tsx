@@ -28,6 +28,15 @@ function Schedule() {
                 <Row justify={"center"} align={"middle"}>
                     {
                         parsedSchedules.map((schedule: any, idx: number) => {
+                            schedule = schedule.map((item: any) => {
+                                return {
+                                    ...item,
+                                    description: <ul>
+                                        <li>{item.description}</li>
+                                        {item.move_method ? <li><a href={item.move_method}>이동방법</a></li> : <span></span>}
+                                    </ul>
+                                }
+                            })
                             return (
                                 <Col key={idx} span={8} className={'col'}>
                                     <h2>플랜 {idx + 1}</h2>
@@ -35,7 +44,7 @@ function Schedule() {
                                         className={"step"}
                                         direction="vertical"
                                         size="small"
-                                        current={1}
+                                        current={-1}
                                         items={schedule}
                                     />
                                 </Col>
