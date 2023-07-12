@@ -19,11 +19,14 @@
       margin-top: 30px;
 
       .step {
-        //display: flex;
-        //justify-items: center;
-        //align-items: center;
         padding: 20px;
       }
+    }
+
+    .view {
+      border: none;
+      width: 100%;
+      height: 600px;
     }
   }
 }

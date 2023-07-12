@@ -1,6 +1,6 @@
 import React from 'react';
 import {useNavigate, useSearchParams} from "react-router-dom";
-import {Layout, Row, Col, Steps, Image} from "antd";
+import {Layout, Row, Col, Steps, Image, Collapse} from "antd";
 import {CaretLeftOutlined} from "@ant-design/icons";
 import schedule from '../../../../datasources/2023-jeju/schedule.json';
 
@@ -32,7 +32,25 @@ function Schedule() {
                                 width={800}
                                 src={'https://leessony-1312916878.cos.ap-seoul.myqcloud.com/images/tour/2023-07-15%20ticket.png'}
                                 alt={""}/>
-                        </Row> : ''
+                        </Row> :
+                        (params.get('date') === '2023-07-16' || params.get('date') === '2023-07-17') ?
+                            <Row justify={"center"} align={"middle"} style={{padding: 10}}>
+                                <Col xs={{span: 24}} lg={{span: 12}}>
+                                    <Collapse
+                                        size="small"
+                                        items={[{
+                                            key: '1',
+                                            label: '중문관광단지 소개',
+                                            children:
+                                                <iframe
+                                                    className={"view"}
+                                                    title={"중문관광단지"}
+                                                    src="https://korean.visitkorea.or.kr/detail/rem_detail.do?cotid=8359cae7-44d6-4b1c-9a12-c3cfcd1d5b78"/>
+                                        }]}
+                                    />
+                                </Col>
+                            </Row>
+                            : ''
                 }
                 <Row justify={"center"} align={"middle"}>
                     {
@@ -41,9 +59,8 @@ function Schedule() {
                                 return {
                                     ...item,
                                     description: <ul>
-                                        <li>{item.description}</li>
-                                        {item.move_method ? <li><a href={item.move_method}>이동방법</a></li> :
-                                            <span></span>}
+                                        {item.description ? <li>{item.description}</li> : ''}
+                                        {item.move_method ? <li><a href={item.move_method}>이동방법</a></li> : ''}
                                     </ul>
                                 }
                             })

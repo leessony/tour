@@ -2,12 +2,12 @@
   "2023-07-15": [
     [
       {
-        "title": "용산 집-김포공항",
+        "title": "용산 집->김포공항",
         "description": "집에서 16:30 출발 공항철도 타고 김포공항 이동하기",
         "move_method": "https://naver.me/GPFPZjhH"
       },
       {
-        "title": "제주공항-켄싱턴 리조트 중문",
+        "title": "제주공항->켄싱턴 리조트 중문",
         "description": "제주 공항 내려서 숙소로 이동, 숙소 예상 도착 시간 21:00 ~ 22:00 (⚠️먹을것 챙기기)",
         "move_method": "https://naver.me/xYThCFVt"
       },
@@ -18,12 +18,12 @@
     ],
     [
       {
-        "title": "용산 집-김포공항",
+        "title": "용산 집->김포공항",
         "description": "집에서 16:30 출발 공항철도 타고 김포공항 이동하기",
         "move_method": "https://naver.me/GPFPZjhH"
       },
       {
-        "title": "제주공항-켄싱턴 리조트 중문",
+        "title": "제주공항->켄싱턴 리조트 중문",
         "description": "제주 공항 내려서 숙소로 이동, 숙소 예상 도착 시간 21:00 ~ 22:00 (⚠️먹을것 챙기기)",
         "move_method": "https://naver.me/xYThCFVt"
       },
@@ -36,88 +36,48 @@
   "2023-07-16": [
     [
       {
-        "title": "일정 ---",
-        "description": "블라블라블라~"
+        "title": "조식먹기",
+        "description": "켄싱턴 리조트 조식"
       },
       {
-        "title": "일정 ---",
-        "description": "블라블라블라~"
+        "title": "중문관광단지"
       },
       {
-        "title": "일정 ---",
-        "description": "블라블라블라~"
+        "title": "켄싱턴리조트->신라호텔 제주",
+        "move_method": "https://naver.me/FEdkESpW"
       }
     ],
     [
       {
-        "title": "일정 ---",
-        "description": "블라블라블라~"
+        "title": "조식먹기",
+        "description": "켄싱턴 리조트 조식"
       },
       {
-        "title": "일정 ---",
-        "description": "블라블라블라~"
+        "title": "중문관광단지"
       },
       {
-        "title": "일정 ---",
-        "description": "블라블라블라~"
-      }
-    ],
-    [
-      {
-        "title": "일정 ---",
-        "description": "블라블라블라~"
-      },
-      {
-        "title": "일정 ---",
-        "description": "블라블라블라~"
-      },
-      {
-        "title": "일정 ---",
-        "description": "블라블라블라~"
+        "title": "켄싱턴리조트->신라호텔 제주",
+        "move_method": "https://naver.me/FEdkESpW"
       }
     ]
   ],
   "2023-07-17": [
     [
       {
-        "title": "일정 ---",
-        "description": "블라블라블라~"
+        "title": "조식먹기",
+        "description": "켄싱턴 리조트 조식"
       },
       {
-        "title": "일정 ---",
-        "description": "블라블라블라~"
-      },
-      {
-        "title": "일정 ---",
-        "description": "블라블라블라~"
+        "title": "중문관광단지"
       }
     ],
     [
       {
-        "title": "일정 ---",
-        "description": "블라블라블라~"
+        "title": "조식먹기",
+        "description": "켄싱턴 리조트 조식"
       },
       {
-        "title": "일정 ---",
-        "description": "블라블라블라~"
-      },
-      {
-        "title": "일정 ---",
-        "description": "블라블라블라~"
-      }
-    ],
-    [
-      {
-        "title": "일정 ---",
-        "description": "블라블라블라~"
-      },
-      {
-        "title": "일정 ---",
-        "description": "블라블라블라~"
-      },
-      {
-        "title": "일정 ---",
-        "description": "블라블라블라~"
+        "title": "중문관광단지"
       }
     ]
   ],
