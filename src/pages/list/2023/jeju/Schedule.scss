@@ -14,11 +14,15 @@
   .content {
     background-color: white;
 
+    .notice {
+      padding: 30px;
+    }
+
     .col {
-      //border: 1px solid rebeccapurple;
       margin-top: 30px;
 
       .step {
+        font-family: 'Gugi', cursive;
         padding: 20px;
       }
     }

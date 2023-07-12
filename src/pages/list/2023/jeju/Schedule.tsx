@@ -27,14 +27,22 @@ function Schedule() {
             <Content className={"content"}>
                 {
                     params.get('date') === '2023-07-15' ?
-                        <Row justify={"center"} align={"middle"}>
-                            <Image
-                                width={800}
-                                src={'https://leessony-1312916878.cos.ap-seoul.myqcloud.com/images/tour/2023-07-15%20ticket.png'}
-                                alt={""}/>
+                        <Row justify={"center"} align={"middle"} className={'notice'}>
+                            <Col xs={{span: 24}} lg={{span: 12}}>
+                                <Collapse
+                                    size="small"
+                                    items={[{
+                                        key: '1',
+                                        label: '비행키 티켓정보',
+                                        children: <Image
+                                            src={'https://leessony-1312916878.cos.ap-seoul.myqcloud.com/images/tour/2023-07-15%20ticket.png'}
+                                            alt={""}/>
+                                    }]}
+                                />
+                            </Col>
                         </Row> :
                         (params.get('date') === '2023-07-16' || params.get('date') === '2023-07-17') ?
-                            <Row justify={"center"} align={"middle"} style={{padding: 10}}>
+                            <Row justify={"center"} align={"middle"} className={'notice'}>
                                 <Col xs={{span: 24}} lg={{span: 12}}>
                                     <Collapse
                                         size="small"

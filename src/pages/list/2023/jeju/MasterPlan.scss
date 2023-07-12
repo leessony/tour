@@ -28,10 +28,27 @@
     background-position: left top;
     justify-content: left;
     color: #ffffff; /* 글자 색상 설정 */
-    font-size: 18px;
+    font-size: 5px;
   }
 
   #content {
     height: 120vh; /* 뷰포트 높이에 맞춤 */
+    tr {
+      font-family: 'Gugi', cursive;
+
+      a {
+        font-family: 'Gugi', cursive;
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .ant-table-content {
+    font-size: 2px;
+
+    a {
+      font-size: 2px;
+    }
   }
 }
