@@ -48,7 +48,7 @@ function Schedule() {
                                 }
                             })
                             return (
-                                <Col key={idx} span={8} className={'col'}>
+                                <Col key={idx} xs={{span: 24}} lg={{span: 8}} className={'col'}>
                                     <h2>플랜 {idx + 1}</h2>
                                     <Steps
                                         className={"step"}
