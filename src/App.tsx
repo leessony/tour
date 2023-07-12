@@ -1,6 +1,6 @@
 import React from 'react';
 import {createHashRouter, RouterProvider} from "react-router-dom";
-import {Home, JejuSummer} from "./pages";
+import {Home, MasterPlan, Schedule as Jeju2023Schedule} from "./pages";
 
 import './App.scss';
 
@@ -11,7 +11,11 @@ const router = createHashRouter([
     },
     {
         path: '/list/2023/jeju',
-        element: <JejuSummer/>
+        element: <MasterPlan/>
+    },
+    {
+        path: '/list/2023/jeju/schedule',
+        element: <Jeju2023Schedule/>
     }
 ])
 

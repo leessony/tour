@@ -1,4 +1,5 @@
 import Home from './Home';
-import JejuSummer from './list/2023/JejuSummer';
+import MasterPlan from './list/2023/jeju/MasterPlan';
+import Schedule from './list/2023/jeju/Schedule';
 
-export {Home, JejuSummer}
+export {Home, MasterPlan, Schedule}

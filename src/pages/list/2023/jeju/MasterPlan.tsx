@@ -2,15 +2,16 @@ import React from 'react';
 import {useNavigate} from "react-router-dom";
 import {Table, Typography, Layout} from "antd";
 import {CaretLeftOutlined} from '@ant-design/icons';
-import plans from '../../../datasources/jeju.json';
+import plans from '../../../../datasources/jeju.json';
 
-import "./JejuSummer.scss"
+import "./MasterPlan.scss"
 
 const {Header, Content} = Layout
 const {Link} = Typography;
 
-function JejuSummer() {
+function MasterPlan() {
     const navigate = useNavigate()
+
     const parsedPlans = plans.map((item: any, idx: number) => {
         return {...item, no: idx + 1}
     })
@@ -51,6 +52,17 @@ function JejuSummer() {
                             render: (val: string, item: any) => {
                                 return val !== "-" ? <Link href={item.location}>{val}</Link> : <span>{val}</span>
                             }
+                        },
+                        {
+                            key: "schedule",
+                            dataIndex: "schedule",
+                            title: "일정",
+                            align: "center",
+                            render: (_, record: any) => {
+                                return (
+                                    <Link href={`#/list/2023/jeju/schedule?date=${record.date}`}>상세보기</Link>
+                                )
+                            }
                         }
                     ]}
                     dataSource={parsedPlans}
@@ -60,4 +72,4 @@ function JejuSummer() {
     )
 }
 
-export default JejuSummer
+export default MasterPlan;
