@@ -1,6 +1,6 @@
 import React from 'react';
 import {useNavigate, useSearchParams} from "react-router-dom";
-import {Layout, Row, Col, Steps} from "antd";
+import {Layout, Row, Col, Steps, Image} from "antd";
 import {CaretLeftOutlined} from "@ant-design/icons";
 import schedule from '../../../../datasources/2023-jeju/schedule.json';
 
@@ -25,6 +25,15 @@ function Schedule() {
                 </h1>
             </Header>
             <Content className={"content"}>
+                {
+                    params.get('date') === '2023-07-15' ?
+                        <Row justify={"center"} align={"middle"}>
+                            <Image
+                                width={800}
+                                src={'https://leessony-1312916878.cos.ap-seoul.myqcloud.com/images/tour/2023-07-15%20ticket.png'}
+                                alt={""}/>
+                        </Row> : ''
+                }
                 <Row justify={"center"} align={"middle"}>
                     {
                         parsedSchedules.map((schedule: any, idx: number) => {
@@ -33,7 +42,8 @@ function Schedule() {
                                     ...item,
                                     description: <ul>
                                         <li>{item.description}</li>
-                                        {item.move_method ? <li><a href={item.move_method}>이동방법</a></li> : <span></span>}
+                                        {item.move_method ? <li><a href={item.move_method}>이동방법</a></li> :
+                                            <span></span>}
                                     </ul>
                                 }
                             })
