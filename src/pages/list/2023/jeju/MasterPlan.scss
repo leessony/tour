@@ -43,12 +43,12 @@
   }
 }
 
-@media (max-width: 480px) {
+@media all and (max-width:767px) {
   .ant-table-content {
-    font-size: 2px;
+    font-size: 10px;
 
     a {
-      font-size: 2px;
+      font-size: 10px;
     }
   }
 }
