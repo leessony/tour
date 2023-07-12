@@ -65,19 +65,27 @@
     [
       {
         "title": "조식먹기",
-        "description": "켄싱턴 리조트 조식"
+        "description": "신라호텔 조식"
       },
       {
         "title": "중문관광단지"
+      },
+      {
+        "title": "신라호텔 제주->오션스위츠 호텔",
+        "move_method": "https://naver.me/56D3AKhX"
       }
     ],
     [
       {
         "title": "조식먹기",
-        "description": "켄싱턴 리조트 조식"
+        "description": "신라호텔 조식"
       },
       {
-        "title": "중문관광단지"
+        "title": "호텔내부탐방"
+      },
+      {
+        "title": "신라호텔 제주->오션스위츠 호텔",
+        "move_method": "https://naver.me/56D3AKhX"
       }
     ]
   ],

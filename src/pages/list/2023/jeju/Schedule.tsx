@@ -46,15 +46,35 @@ function Schedule() {
                                 <Col xs={{span: 24}} lg={{span: 12}}>
                                     <Collapse
                                         size="small"
-                                        items={[{
-                                            key: '1',
-                                            label: '중문관광단지 소개',
-                                            children:
-                                                <iframe
-                                                    className={"view"}
-                                                    title={"중문관광단지"}
-                                                    src="https://korean.visitkorea.or.kr/detail/rem_detail.do?cotid=8359cae7-44d6-4b1c-9a12-c3cfcd1d5b78"/>
-                                        }]}
+                                        items={[
+                                            {
+                                                key: '1',
+                                                label: '중문관광단지 소개',
+                                                children:
+                                                    <iframe
+                                                        className={"view"}
+                                                        title={"중문관광단지"}
+                                                        src="https://korean.visitkorea.or.kr/detail/rem_detail.do?cotid=8359cae7-44d6-4b1c-9a12-c3cfcd1d5b78"/>
+                                            },
+                                            {
+                                                key: '2',
+                                                label: '켄싱턴리조트 부대시설',
+                                                children:
+                                                    <iframe
+                                                        className={"view"}
+                                                        title={"켄싱턴리조트 부대시설"}
+                                                        src="https://www.kensington.co.kr/rcc/sub_facilities"/>
+                                            },
+                                            {
+                                                key: '3',
+                                                label: '신라호텔 부대시설',
+                                                children:
+                                                    <iframe
+                                                        className={"view"}
+                                                        title={"신라호텔 부대시설"}
+                                                        src="https://www.shilla.net/jeju/retreat/index.do"/>
+                                            }
+                                        ]}
                                     />
                                 </Col>
                             </Row>
