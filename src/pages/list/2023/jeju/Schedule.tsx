@@ -1,12 +1,13 @@
 import React from 'react';
 import {useNavigate, useSearchParams} from "react-router-dom";
-import {Layout, Row, Col, Steps, Image, Collapse} from "antd";
+import {Layout, Row, Col, Steps, Image, Collapse, Typography} from "antd";
 import {CaretLeftOutlined} from "@ant-design/icons";
 import schedule from '../../../../datasources/2023-jeju/schedule.json';
 
-import "./Schedule.scss"
+import "./Schedule.scss";
 
-const {Header, Content} = Layout
+const {Header, Content} = Layout;
+const {Link} = Typography;
 
 function Schedule() {
     const navigate = useNavigate()
@@ -84,11 +85,18 @@ function Schedule() {
                     {
                         parsedSchedules.map((schedule: any, idx: number) => {
                             schedule = schedule.map((item: any) => {
+                                const famousRestraurant = item.famous_restaurant ? <ul>
+                                    <li><Link href={item.famous_restaurant}>맛집</Link></li>
+                                </ul> : ''
                                 return {
-                                    ...item,
+                                    title: item?.address ?
+                                        <Link href={item.address}>
+                                            {item.title}{famousRestraurant}
+                                        </Link> :
+                                        <p>{item.title}{famousRestraurant}</p>,
                                     description: <ul>
                                         {item.description ? <li>{item.description}</li> : ''}
-                                        {item.move_method ? <li><a href={item.move_method}>이동방법</a></li> : ''}
+                                        {item.move_method ? <li><Link href={item.move_method}>이동방법</Link></li> : ''}
                                     </ul>
                                 }
                             })
