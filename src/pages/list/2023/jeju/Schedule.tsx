@@ -72,7 +72,7 @@ function Schedule() {
                                                     <iframe
                                                         className={"view"}
                                                         title={"신라호텔 부대시설"}
-                                                        src="https://www.shilla.net/jeju/retreat/index.do"/>
+                                                        src="https://m.shilla.net/jeju/retreat/viewRetreat.do?lang=ko&contId=ADP"/>
                                             }
                                         ]}
                                     />
