@@ -63,7 +63,7 @@ function Schedule() {
                                                     <iframe
                                                         className={"view"}
                                                         title={"켄싱턴리조트 부대시설"}
-                                                        src="https://www.kensington.co.kr/rcc/sub_facilities"/>
+                                                        src="https://m.kensington.co.kr/rcc/sub_facilities"/>
                                             },
                                             {
                                                 key: '3',
